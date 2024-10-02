@@ -26,8 +26,8 @@ public class T03 {
             tahunTerbit = input.nextLine();
             penerbit = input.nextLine();
             formatBukuElektronik = input.nextLine();
-            hargaPembelian = input.nextDouble();
-            minimumMargin = input.nextDouble();
+            hargaPembelian = Double.parseDouble(input.nextLine());
+            minimumMargin = Double.parseDouble(input.nextLine());
             if (-(minimumMargin / hargaPembelian) > 0.4) {
                 jenisdiskon = "Once in a lifetime";
             } else {
@@ -41,8 +41,8 @@ public class T03 {
                     }
                 }
             }
-            stok = input.nextInt();
-            rating = input.nextDouble();
+            stok = Integer.parseInt(input.nextLine());
+            rating = Double.parseDouble(input.nextLine());
             if (rating >= 4.7 && rating <= 5.0) {
                 kategori = "Best Pick";
             } else {
